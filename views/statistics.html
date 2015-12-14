@@ -1,0 +1,329 @@
+<!DOCTYPE html>
+<html>
+<head lang="en">
+    <meta charset="UTF-8">
+    <title>融才后台数据统计</title>
+    <link rel="stylesheet" type="text/css" href="/rongcai_web/css/bootstrap.css">
+    <link rel="stylesheet" type="text/css" href="/rongcai_web/css/styles.css">
+
+    <style>
+        .table > thead > tr > th{
+            padding: 9px;
+            padding-left:6px;
+            background: #eeeeee;
+            color: #666666;
+
+        }
+        .table > tbody > tr > td{
+            padding: 6px;
+            background: #f8f8f8;
+            color: #666666;
+
+        }
+        .table > thead > tr > th.padding-left-22px{
+            padding-left: 22px;
+
+
+        }
+
+        .table > tbody > tr > td.padding-left-22px{
+            padding-left: 22px;
+
+
+        }
+        .xx:after {
+            visibility: hidden;
+            display: block;
+            font-size: 0;
+            content: " ";
+            clear: both;
+            height: 0;
+        }
+    </style>
+</head>
+<body>
+
+
+        <div id="header">
+            <div class="inner-wrapper" >
+                <img src="/rongcai_web/img/logo.png" style="margin-top:12px;float: left;">
+                <div style="float: left;margin-left: 10px;">
+                    <div style="margin-top:15px;color: #666666;font-size: 18px;">金融外包专家</div>
+                    <div style="color:#999999;font-size: 16px;">rongcai.com</div>
+                </div>
+            </div>
+        </div>
+
+        <div id="main">
+            <div class="inner-wrapper" >
+
+                <div id="sidebar">
+                    <div id="user-info" style="width: 258px; ">
+                        <table style="width: 100%;background: #ffffff;border-radius: 5px;">
+                            <tr >
+                                <td style="text-align:center;width: 78px;height:78px;border-right: 1px solid rgb(232,232,232); " >
+                                        <img src="/rongcai_web/img/navbar/navbar_ic_userface.png" style="width: 39px;">
+                                </td>
+                                <td style="width: 179px;height:78px;">
+                                    <div style="margin-left:22px; font-size: 18px;color: #666666">
+                                        <div >
+                                                祝君好
+                                        </div>
+                                        <div style="margin-top:10px;font-size: 14px;color: #999999">
+                                                2015年11月27日
+                                        </div>
+                                    </div>
+                                </td>
+                            </tr>
+
+                        </table>
+
+                        <table style="width: 100%;background: #ffffff;margin-top: 22px;border-radius: 5px;">
+                            <tr >
+                                <td style="border-bottom:1px solid rgb(232,232,232); text-align:center;width: 78px;height:78px;border-right: 1px solid rgb(232,232,232); " >
+                                    <img src="/rongcai_web/img/navbar/navbar_ic_supplier_nor.png" style="width: 39px;">
+                                </td>
+                                <td style="border-bottom:1px solid rgb(232,232,232); width: 179px;height:78px;">
+                                    <div style="margin-left:22px; font-size: 18px;color: #666666">
+                                        <div >
+                                            供应商管理
+                                        </div>
+
+                                    </div>
+                                </td>
+                            </tr>
+                            <tr >
+                                <td style="border-bottom:1px solid rgb(232,232,232); text-align:center;width: 78px;height:78px;border-right: 1px solid rgb(232,232,232); " >
+                                    <img src="/rongcai_web/img/navbar/navbar_ic_demand_nor.png" style="width: 39px;">
+                                </td>
+                                <td style="border-bottom:1px solid rgb(232,232,232); width: 179px;height:78px;">
+                                    <div style="margin-left:22px; font-size: 18px;color: #666666">
+                                        <div >
+                                            需求管理
+                                        </div>
+
+                                    </div>
+                                </td>
+                            </tr>
+                            <tr >
+                                <td style="border-bottom:1px solid rgb(232,232,232); text-align:center;width: 78px;height:78px;border-right: 1px solid rgb(232,232,232); " >
+                                    <img src="/rongcai_web/img/navbar/navbar_ic_worker_nor.png" style="width: 39px;">
+                                </td>
+                                <td style="border-bottom:1px solid rgb(232,232,232); width: 179px;height:78px;">
+                                    <div style="margin-left:22px; font-size: 18px;color: #666666">
+                                        <div >
+                                            外包人员管理
+                                        </div>
+
+                                    </div>
+                                </td>
+                            </tr>
+                            <tr >
+                                <td style="border-bottom:1px solid rgb(232,232,232); text-align:center;width: 78px;height:78px;border-right: 1px solid rgb(232,232,232); " >
+                                    <img src="/rongcai_web/img/navbar/navbar_ic_financial_nor.png" style="width: 39px;">
+                                </td>
+                                <td style="border-bottom:1px solid rgb(232,232,232); width: 179px;height:78px;">
+                                    <div style="margin-left:22px; font-size: 18px;color: #666666">
+                                        <div >
+                                            财务结算
+                                        </div>
+
+                                    </div>
+                                </td>
+                            </tr>
+                            <tr >
+                                <td style="border-bottom:1px solid rgb(232,232,232); text-align:center;width: 78px;height:78px;border-right: 1px solid rgb(232,232,232); " >
+                                    <img src="/rongcai_web/img/navbar/navbar_ic_data_pre.png" style="width: 39px;">
+                                </td>
+                                <td style="border-bottom:1px solid rgb(232,232,232); width: 179px;height:78px;">
+                                    <div style="margin-left:22px; font-size: 18px;color: #1b75d9">
+                                        <div >
+                                            数据统计
+                                        </div>
+
+                                    </div>
+                                </td>
+                            </tr>
+                            <tr >
+                                <td style="border-bottom:1px solid rgb(232,232,232); text-align:center;width: 78px;height:78px;border-right: 1px solid rgb(232,232,232); " >
+                                    <img src="/rongcai_web/img/navbar/navbar_ic_server_nor.png" style="width: 39px;">
+                                </td>
+                                <td style="border-bottom:1px solid rgb(232,232,232); width: 179px;height:78px;">
+                                    <div style="margin-left:22px; font-size: 18px;color: #666666">
+                                        <div >
+                                            后台管理
+                                        </div>
+
+                                    </div>
+                                </td>
+                            </tr>
+                        </table>
+                    </div>
+
+                </div>
+
+                <div id="right-side">
+                    <div class="main-margin-left-wrapper">
+
+                        <div class="panel panel-default">
+                            <div class="panel-heading" style="height:60px;background: white;">
+                                <span style="font-size:24px; ">供应商概览</span>
+                            </div>
+                            <div class="panel-body" style="height:348px;margin-top:11px;position: relative;">
+
+                                <div id="合作人数" style="height: 348px;width: 50%;float: left;padding-left: 10px;">
+
+                                </div>
+                                <div style="position: absolute;left: 5px;top: 0px;border-left: 5px solid #4da1f1;">
+                                    <span style="font-size: 18px;color: #4da1f1;margin-left: 10px;">合作人数</span>
+                                </div>
+                                <div style="height: 348px;width: 50%;float:left;padding-right: 10px;">
+                                    <table class="table table-bordered">
+                                        <thead>
+                                        <tr>
+
+                                            <th class="padding-left-22px">其他（35）</th>
+                                            <th class="width92px">人数</th>
+                                            <th class="width92px">占比</th>
+                                        </tr>
+                                        </thead>
+                                        <tbody>
+                                        <tr>
+
+                                            <td class="padding-left-22px">Mark</td>
+                                            <td class="width92px">Otto</td>
+                                            <td class="width92px">@mdo</td>
+                                        </tr>
+                                        <tr>
+
+                                            <td class="padding-left-22px">Jacob</td>
+                                            <td class="width92px">Thornton</td>
+                                            <td class="width92px">@fat</td>
+                                        </tr>
+                                        <tr>
+
+                                            <td class="padding-left-22px">Larry</td>
+                                            <td class="width92px">the Bird</td>
+                                            <td class="width92px">@twitter</td>
+                                        </tr>
+                                        <tr>
+
+                                            <td class="padding-left-22px">Larry</td>
+                                            <td class="width92px">the Bird</td>
+                                            <td class="width92px">@twitter</td>
+                                        </tr>
+                                        <tr>
+
+                                            <td class="padding-left-22px">Larry</td>
+                                            <td class="width92px">the Bird</td>
+                                            <td class="width92px">@twitter</td>
+                                        </tr>
+                                        <tr>
+
+                                            <td class="padding-left-22px">Larry</td>
+                                            <td class="width92px">the Bird</td>
+                                            <td class="width92px">@twitter</td>
+                                        </tr>
+                                        <tr>
+
+                                            <td class="padding-left-22px">Larry</td>
+                                            <td class="width92px">the Bird</td>
+                                            <td class="width92px">@twitter</td>
+                                        </tr>
+                                        <tr>
+
+                                            <td class="padding-left-22px">Larry</td>
+                                            <td class="width92px">the Bird</td>
+                                            <td class="width92px">@twitter</td>
+                                        </tr>
+                                        <tr>
+
+                                            <td class="padding-left-22px" style="border:none;"></td>
+                                            <td class="width92px" style="border:none;"> </td>
+                                            <td class="width92px" style="border:none;text-align: right;"><span><a href="#" style="color: #999999">查看更多</a></span></td>
+                                        </tr>
+                                        </tbody>
+                                    </table>
+                                </div>
+                            </div>
+                        </div>
+
+
+                        <div  style="position: relative;background:white;padding-top: 50px;overflow: hidden;">
+                            <div id="hezuozhiliang"  style="height: 380px;">
+
+                            </div>
+                            <div style="position: absolute;left: 5px;top: 10px;border-left: 5px solid #4da1f1;">
+                                <span style="font-size: 18px;color: #4da1f1;margin-left: 10px;">合作质量</span>
+                            </div>
+                        </div>
+                        <div style="margin-top: 10px;">
+                            <div style="float:left;width: 50%;height: 250px;">
+                                <div class="panel panel-default" style="margin-right: 5px;">
+                                    <div class="panel-heading">
+                                        <div style="float:right;"><a href="#" style="color: #999999;">详情</a></div>
+                                        <h3 class="panel-title">项目预算<span style="color: #999999;"> ( 万元 ) </span></h3>
+                                    </div>
+                                    <div class="panel-body">
+                                       <div class="xx" style="height: 236px;">
+                                           <div style="float:left;width: 35.5%;height: 236px;border-right: 1px solid rgb(221,221,221);">
+                                                <div style="text-align: center;margin-top: 60px;">
+                                                    <span style="color:#1178ea;font-size: 36px;">3000</span>
+                                                </div>
+                                                <div style="text-align: center;margin-top: 10px;">
+                                                    <span style="color:#999999;font-size: 18px;">总预算</span>
+                                                </div>
+
+                                           </div>
+                                           <div style="float:left;width: 64.5%;">
+                                                <div style="float:left;width:35.5%;height: 236px;text-align: center;">
+                                                    <div style="line-height:236px;font-size: 18px;color:#999999;">已结费</div>
+                                                </div>
+                                               <div style="float:left;width:64.5%;height: 236px;">
+                                                    <div style="height: 118px;text-align: right;padding-right: 40px;">
+                                                      <div style="font-size: 36px;padding-top: 15px;">2000</div>
+                                                      <div style="font-size: 18px;color: #999999;">总共</div>
+                                                    </div>
+                                                    <div style="height: 118px;border-top: 1px solid rgb(221,221,221);text-align: right;padding-right: 40px;">
+                                                        <div style="font-size: 24px;padding-top: 15px;">600</div>
+                                                        <div style="font-size: 18px;color: #999999;padding-top: 10px;">上期已结</div>
+                                                    </div>
+                                               </div>
+                                           </div>
+                                       </div>
+                                        <div style="height: 118px;border-top: 1px solid rgb(221,221,221);">
+                                            <div style="float:left;width:35.5%;height: 118px;text-align: center;">
+                                                <div style="line-height:118px;font-size: 24px;color:#999999;">剩余</div>
+                                            </div>
+                                            <div style="float:left;width:64.5%;height: 118px;text-align: right;padding-right: 40px;">
+                                                <div style="line-height:118px;font-size: 48px;color:#f95e21;">1000</div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+
+                            <div style="float:left;width: 50%;">
+                                <div class="panel panel-default" style="margin-left: 5px;">
+                                    <div class="panel-heading">
+                                        <div style="float:right;"><a href="#" style="color: #999999;">详情</a></div>
+                                        <h3 class="panel-title">项目概览</h3>
+                                    </div>
+                                    <div id="项目概览" class="panel-body" style="height: 354px;">
+
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+<script type="text/javascript" src="/rongcai_web/js/jquery-1.11.2.min.js"></script>
+<script type="text/javascript" src="/rongcai_web/js/charts/highcharts.js"></script>
+<script type="text/javascript" src="/rongcai_web/js/charts/exporting.js"></script>
+<script type="text/javascript" src="/rongcai_web/js/charts/合作人数-barchart.js"></script>
+<script type="text/javascript" src="/rongcai_web/js/charts/合作质量-barchart.js"></script>
+<script type="text/javascript" src="/rongcai_web/js/charts/项目概览-水平barchart.js"></script>
+</body>
+</html>
